@@ -5,71 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container">
         <div class="header__content">
-          <div class="header__item header__item--burger">
-            <button type="button" class="burger-menu icon"></button>
+          <div class="header__item">
+            <button
+              type="button"
+              class="rounded-icon rounded-icon--burger-menu"
+            ></button>
           </div>
-
           <div class="header__item header__item--logo">
-            <a href="/" class="header__link header__link--logo">
+            <a href="/" class="header__link">
               <img src="img/logo.svg" alt="Logo" />
             </a>
           </div>
-
           <ul class="header__item header__item--tablet">
             <li>
               <button
                 type="button"
-                class="header__link icon header__link--call"
+                class="header__link rounded-icon rounded-icon--call"
               ></button>
             </li>
             <li>
               <button
                 type="button"
-                class="header__link header__link--chat icon"
+                class="header__link rounded-icon rounded-icon--chat"
               ></button>
-            </li>
-            <li>
-              <a href="#!" class="header__link icon header__link--profile"> </a>
-            </li>
-          </ul>
-
-          <ul class="header__item header__item--mobile">
-            <li>
-              <a href="#!" class="header__link icon header__link--repair"> </a>
             </li>
             <li>
               <a
                 href="#!"
-                class="header__link icon header__link--checkoutstatus"
+                class="header__link rounded-icon rounded-icon--profile"
               >
               </a>
             </li>
           </ul>
+          <div class="header__item header__item--mobile">
+            <a
+              href="#!"
+              class="header__link rounded-icon rounded-icon--repair"
+            ></a>
+            <a
+              href="#!"
+              class="header__link rounded-icon rounded-icon--checkoutstatus"
+            ></a>
+          </div>
         </div>
       </div>
     </header>
-
     <main class="menu">
       <div class="center__wrap">
-        <div class="title-container">
-          <h1 class="title menu__title">Услуги и сервисы</h1>
+        <div class="menu-wrapper">
+          <div class="title-container">
+            <h1 class="title menu__title">Услуги и сервисы</h1>
+          </div>
           <div class="menu-container">
-            <div class="request-container">
-              <span class="request-text">Оставить заявку</span>
-              <a href="#!" class="menu__link menu__link--repair icon"> </a>
-            </div>
-
-            <div class="status-container">
-              <span class="status-text">Статус ремонта</span>
-              <a href="#!" class="menu__link menu__link--checkoutstatus icon">
-              </a>
-            </div>
+            <a href="#!" class="request-container">
+              <span>Оставить заявку</span>
+              <span class="rounded-icon rounded-icon--repair"></span>
+            </a>
+            <a href="#!" class="status-container">
+              <span>Статус ремонта</span>
+              <span class="rounded-icon rounded-icon--checkoutstatus"></span>
+            </a>
           </div>
         </div>
         <nav class="nav">
@@ -101,7 +104,6 @@
             </li>
           </ul>
         </nav>
-
         <section class="abt-company">
           <div class="abt-company__info">
             <div class="abt-company__wrapper">
@@ -123,7 +125,9 @@
               </p>
             </div>
             <div class="text__btn">
-              <button class="btn__readmore">Читать далее</button>
+              <div class="btn">
+                <button class="btn__readmore">Читать далее</button>
+              </div>
             </div>
           </div>
           <div class="abt-company__img">
