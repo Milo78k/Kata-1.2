@@ -14,31 +14,25 @@
       <header class="header-page">
         <div class="header-page__list">
           <div class="header-page__wrapper">
-            <div class="header-page__item">
-              <button
-                type="button"
-                class="rounded-icon rounded-icon--close-btn"
-              ></button>
-            </div>
-            <div class="header-page__item">
-              <a href="/" class="header-page__link">
-                <img src="img/logo.svg" alt="Logo" />
-              </a>
-            </div>
-          </div>
-          <div class="header-page__item">
             <button
               type="button"
-              class="rounded-icon rounded-icon--search-btn"
+              class="rounded-icon rounded-icon--close-btn"
             ></button>
+            <a href="/" class="header-page__link">
+              <img src="img/logo.svg" alt="Logo" />
+            </a>
           </div>
+          <button
+            type="button"
+            class="rounded-icon rounded-icon--search-btn"
+          ></button>
         </div>
       </header>
       <div class="main-aside">
         <nav class="main-nav header__main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link link is-active"
+              <a href="#" class="main-nav__link link main-nav__link--is-active"
                 >Ремонт техники</a
               >
             </li>
@@ -69,20 +63,14 @@
       <footer class="footer">
         <div class="contact-container">
           <ul class="contact-menu">
-            <li class="contact-menu__button">
-              <button
-                class="contact-menu__button rounded-icon rounded-icon--call"
-              ></button>
+            <li>
+              <button class="rounded-icon rounded-icon--call"></button>
             </li>
-            <li class="contact-menu__button">
-              <button
-                class="contact-menu__button rounded-icon rounded-icon--chat"
-              ></button>
+            <li>
+              <button class="rounded-icon rounded-icon--chat"></button>
             </li>
-            <li class="contact-menu__button">
-              <button
-                class="contact-menu__button rounded-icon rounded-icon--profile"
-              ></button>
+            <li>
+              <button class="rounded-icon rounded-icon--profile"></button>
             </li>
           </ul>
           <address class="address">
@@ -96,7 +84,7 @@
         </div>
         <ul class="lang">
           <li class="lang__item">
-            <span class="lang__link link lang-active">ru</span>
+            <span class="lang__link link lang__link--active">ru</span>
           </li>
           <li class="lang__item">
             <a class="lang__link link" href="#">en</a>
